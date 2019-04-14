@@ -331,3 +331,6 @@ ASALocalRun/
 /Mk0.Tools.Convert/Mk0.Tools.Convert/Mk0.Tools.Convert.nuspec
 /Mk0.Tools.Convert/Mk0.Tools.Convert/nuget.exe
 /Mk0.Tools.Convert/Mk0.Tools.Convert/publish-nuget.bat
+/Mk0.Tools.Convert/Mk0.Tools.Convert.nuspec
+/Mk0.Tools.Convert/nuget.exe
+/Mk0.Tools.Convert/publish-nuget.bat
