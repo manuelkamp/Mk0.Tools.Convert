@@ -1,14 +1,16 @@
-﻿using System.IO;
+﻿using System.Drawing;
+using System.IO;
 
 namespace Mk0.Tools.Convert
 {
     public static class ByteConvert
     {
-        public static System.Drawing.Image ToImage(this byte[] byteArrayIn)
+        public static Image ToImage(this byte[] byteArray)
         {
-            MemoryStream ms = new MemoryStream(byteArrayIn);
-            System.Drawing.Image returnImage = System.Drawing.Image.FromStream(ms);
-            return returnImage;
+            using (MemoryStream ms = new MemoryStream(byteArray))
+            {
+                return Image.FromStream(ms);
+            }
         }
     }
 }
