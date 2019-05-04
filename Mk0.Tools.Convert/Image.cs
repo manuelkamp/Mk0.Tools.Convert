@@ -29,6 +29,9 @@ namespace Mk0.Tools.Convert
                     case ".gif":
                         image.Save(ms, ImageFormat.Gif);
                         break;
+                    default:
+                        image.Save(ms, ImageFormat.Png);
+                        break;
                 }
                 return ms.ToArray();
             }
